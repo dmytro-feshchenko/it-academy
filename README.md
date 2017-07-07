@@ -2,9 +2,11 @@
 
 ## Components:
 - REST API - Java (Spring)
+- Database - PostgreSQL
 - Client - React, Redux
 - Authorization - JWT
-- Tests - JUnit 4,
+- Backend Testing - JUnit 4
+- JavaScript Testing - Jest + Enzyme
 
 ## Getting started
 #### Clone the project:
@@ -40,6 +42,9 @@ project
     │   controllers
 ```
 
+#### Test:
+You can run Jest testing ```npm run test```.
+
 ## Features:
 - [ ] Authorization
 - [ ] Managing courses (CRUD) from user's account
@@ -51,3 +56,9 @@ project
 - [ ] Automated tasks for different languages
 - [ ] Certificates
 - [ ] Forum
+
+
+## Resources:
+- Spring: https://spring.io/
+- Jest: https://facebook.github.io/jest/
+- Redux: http://redux.js.org/

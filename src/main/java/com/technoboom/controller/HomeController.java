@@ -1,4 +1,4 @@
-package com.technoboom.controllers;
+package com.technoboom.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * Date: 7/5/17
  * Time: 3:31 PM
  * Project: ITAcademy
- * Package: com.technoboom.controllers
+ * Package: com.technoboom.controller
  *
  * @author dmitryi
  * @version 1.0
