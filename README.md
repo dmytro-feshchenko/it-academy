@@ -45,6 +45,10 @@ project
 #### Test:
 You can run Jest testing ```npm run test```.
 
+### Modules:
+- [ ] Multiple languages support
+
+
 ## Features:
 - [ ] Authorization
 - [ ] Managing courses (CRUD) from user's account
