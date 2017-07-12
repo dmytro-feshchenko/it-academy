@@ -88,12 +88,6 @@
 		</dependency>
 	</dependencies>
 
-    <modules>
-        <module>backend</module>
-        <module>frontend</module>
-        <module>gui</module>
-    </modules>
-
 	<build>
 		<plugins>
 			<plugin>

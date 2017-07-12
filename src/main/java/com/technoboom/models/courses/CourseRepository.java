@@ -1,6 +1,9 @@
 package com.technoboom.models.courses;
 
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.PagingAndSortingRepository;
+import org.springframework.data.repository.query.Param;
+import org.springframework.security.access.prepost.PreAuthorize;
 
 /**
  * Created by IntelliJ IDEA.
@@ -13,5 +16,18 @@ import org.springframework.data.repository.CrudRepository;
  * @version 1.0
  * @since 1.0
  */
-public interface CourseRepository extends CrudRepository<Course, Long> {
+@PreAuthorize("hasRole('ROLE_OWNER')")
+public interface CourseRepository extends PagingAndSortingRepository<Course, Long> {
+
+    @Override
+    @PreAuthorize("#course?.owner == null or #course?.owner?.username == authentication?.username")
+    Course save(@Param("course") Course course);
+
+    @Override
+    @PreAuthorize("@courseRepository.findOne('#id')?.owner?.username == authentication?.username")
+    void delete(@Param("id") Long id);
+
+    @Override
+    @PreAuthorize("#course?.owner?.username == authentication?.username")
+    void delete(@Param("course") Course course);
 }

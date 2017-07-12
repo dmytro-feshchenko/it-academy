@@ -1,6 +1,7 @@
 package com.technoboom.models.courses;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.technoboom.models.users.User;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -32,6 +33,8 @@ public class Course {
     private Date updatedAt;      // date of course last update
     private Date deletedAt;      // date of placing course to archive
 
+    private @ManyToOne User owner;
+
     private @Version @JsonIgnore Long version;
 
     /**
@@ -49,9 +52,10 @@ public class Course {
      * @param description   public description of the course
      * @param level         complexity level (from 1 to 10)
      */
-    public Course(String name, String description, Byte level) {
+    public Course(String name, String description, Byte level, User owner) {
         this.name = name;
         this.description = description;
         this.level = level;
+        this.owner = owner;
     }
 }
