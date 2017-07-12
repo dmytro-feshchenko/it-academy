@@ -7,6 +7,7 @@
 - Authorization - JWT
 - Backend Testing - JUnit 4
 - JavaScript Testing - Jest + Enzyme
+- Webpack 2
 
 ## Getting started
 #### Clone the project:
