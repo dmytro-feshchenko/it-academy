@@ -1,9 +1,7 @@
 import React from 'react';
 
-const App = () => {
+const Header = () => (
     <div>
         
     </div>
-};
-
-export default App;
+);

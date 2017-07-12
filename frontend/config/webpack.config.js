@@ -11,25 +11,36 @@ var config = {
         filename: '[name].bundle.js',
     },
     module: {
-        rules: [{
-            test: /\.jsx?$/,
-            loader: 'babel-loader',
-            options: {
-                presets: [
-                    'react',
-                    'es2015',
-                    'stage-2'
-                ],
-                plugins: []
+        rules: [
+            {
+                test: /\.jsx?$/,
+                loader: 'babel-loader',
+                options: {
+                    presets: [
+                        'react',
+                        'es2015',
+                        'stage-2'
+                    ],
+                    plugins: []
+                },
+                exclude: /node_modules/,
+                // include: [
+                //     path.resolve(__dirname, '/src/main/resources/static')
+                // ]
             },
-            exclude: /node_modules/,
-            // include: [
-            //     path.resolve(__dirname, '/src/main/resources/static')
-            // ]
-        }, {
-            test: /\.json$/,
-            loader: "json-loader"
-        }]
+            {
+                test: /\.json$/,
+                loader: "json-loader"
+            },
+            {
+                test: /\.css/,
+                loaders: [ 'style', 'css' ]
+            },
+            {
+                test: /\.scss$/,
+                loaders: [ 'style', 'css', 'sass' ]
+            }
+        ]
     },
     plugins: [
         new webpack.DefinePlugin({
