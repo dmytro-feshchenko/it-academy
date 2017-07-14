@@ -18,7 +18,15 @@
     "build": "webpack -d --config frontend/config/webpack.config.js",
     "watch": "webpack --watch -d frontend/config/webpack.config.js",
     "test": "jest",
+    "test:coverage": "jest --coverage",
     "test:watch": "npm test -- --watch"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageFormats": [
+      "json",
+      "html"
+    ]
   },
   "dependencies": {
     "antd": "^2.12.0",

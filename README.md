@@ -43,8 +43,11 @@ project
     │   controllers
 ```
 
-#### Test:
+#### Test and coverage:
 You can run Jest testing ```npm run test```.
+
+Command `npm run test:coverage` outputs the code coverage
+and produces `./coverage` directory with json and html reports
 
 ### Modules:
 - [ ] Multiple languages support

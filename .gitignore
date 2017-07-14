@@ -29,3 +29,5 @@ node_modules
 frontend/dist
 node/
 __snapshots__
+
+coverage
