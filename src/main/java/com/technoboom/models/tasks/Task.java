@@ -35,6 +35,23 @@ public class Task {
     private Date updatedAt;      // last updating date
     private Date deletedAt;      // deleting date
 
-    @Version @JsonIgnore
-    private Long version;
+    private @Version @JsonIgnore Long version;
+
+    /**
+     * Default constructor for Task model
+     */
+    public Task() {
+        this.name = "";
+        this.description = "";
+    }
+
+    /**
+     * Constructor for Task
+     * @param name          the name of the task
+     * @param description   the public description of the task
+     */
+    public Task(String name, String description) {
+        this.name = name;
+        this.description = description;
+    }
 }

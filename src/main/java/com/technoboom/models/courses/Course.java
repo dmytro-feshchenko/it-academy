@@ -28,7 +28,7 @@ public class Course {
 
     private String name;         // public name of the course
     private String description;  // public description of the course
-    private Byte level;          // complexity level (from 1 to 10)
+    private Integer level;          // complexity level (from 1 to 10)
     private Date createdAt;      // date of course creation
     private Date updatedAt;      // date of course last update
     private Date deletedAt;      // date of placing course to archive
@@ -52,7 +52,7 @@ public class Course {
      * @param description   public description of the course
      * @param level         complexity level (from 1 to 10)
      */
-    public Course(String name, String description, Byte level, User owner) {
+    public Course(String name, String description, Integer level, User owner) {
         this.name = name;
         this.description = description;
         this.level = level;
