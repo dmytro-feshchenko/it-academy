@@ -1,7 +1,7 @@
-package com.technoboom.models.courses;
+package com.technoboom.model.courses;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.technoboom.models.users.User;
+import com.technoboom.model.users.User;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -12,7 +12,7 @@ import java.util.Date;
  * Date: 7/4/17
  * Time: 9:36 PM
  * Project: ITAcademy
- * Package: com.technoboom.models
+ * Package: com.technoboom.model
  *
  * @author dmitryi
  * @version 1.0
@@ -22,8 +22,7 @@ import java.util.Date;
 @Entity
 @Table(name = "courses")
 public class Course {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String name;         // public name of the course
@@ -34,6 +33,8 @@ public class Course {
     private Date deletedAt;      // date of placing course to archive
 
     private @ManyToOne User owner;
+
+//    private @ManyToMany Category category;
 
     private @Version @JsonIgnore Long version;
 

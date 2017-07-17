@@ -1,6 +1,6 @@
-package com.technoboom.models.courses;
+package com.technoboom.repository.courses;
 
-import org.springframework.data.repository.CrudRepository;
+import com.technoboom.model.courses.Course;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -10,7 +10,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
  * Date: 7/6/17
  * Time: 5:20 PM
  * Project: ITAcademy
- * Package: com.technoboom.models.courses
+ * Package: com.technoboom.model.courses
  *
  * @author dmitryi
  * @version 1.0

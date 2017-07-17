@@ -1,4 +1,4 @@
-package com.technoboom.models.courses;
+package com.technoboom.model.courses;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
@@ -11,7 +11,7 @@ import java.util.Date;
  * Date: 7/4/17
  * Time: 4:13 PM
  * Project: ITAcademy
- * Package: com.technoboom.models
+ * Package: com.technoboom.model
  *
  * @author dmitryi
  * @version 1.0

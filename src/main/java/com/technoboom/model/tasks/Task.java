@@ -1,4 +1,4 @@
-package com.technoboom.models.tasks;
+package com.technoboom.model.tasks;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
@@ -11,7 +11,7 @@ import java.util.Date;
  * Date: 7/5/17
  * Time: 1:04 PM
  * Project: ITAcademy
- * Package: com.technoboom.models.tasks
+ * Package: com.technoboom.model.tasks
  *
  * Task model
  * Task it's a special exercise for users.

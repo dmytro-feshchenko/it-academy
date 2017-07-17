@@ -1,4 +1,4 @@
-package com.technoboom.models.comments;
+package com.technoboom.model.comments;
 
 import lombok.Data;
 
@@ -9,7 +9,7 @@ import javax.persistence.*;
  * Date: 7/5/17
  * Time: 1:01 PM
  * Project: ITAcademy
- * Package: com.technoboom.models.comments
+ * Package: com.technoboom.model.comments
  *
  * @author dmitryi
  * @version 1.0

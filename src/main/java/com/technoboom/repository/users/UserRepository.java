@@ -1,5 +1,6 @@
-package com.technoboom.models.users;
+package com.technoboom.repository.users;
 
+import com.technoboom.model.users.User;
 import org.springframework.data.repository.Repository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
@@ -8,7 +9,7 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
  * Date: 7/6/17
  * Time: 5:22 PM
  * Project: ITAcademy
- * Package: com.technoboom.models.users
+ * Package: com.technoboom.model.users
  *
  * @author dmitryi
  * @version 1.0

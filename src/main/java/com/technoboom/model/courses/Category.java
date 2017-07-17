@@ -1,4 +1,4 @@
-package com.technoboom.models.courses;
+package com.technoboom.model.courses;
 
 import lombok.Data;
 
@@ -9,7 +9,7 @@ import javax.persistence.*;
  * Date: 7/5/17
  * Time: 12:00 PM
  * Project: ITAcademy
- * Package: com.technoboom.models.courses
+ * Package: com.technoboom.model.courses
  *
  * @author dmitryi
  * @version 1.0
@@ -32,5 +32,15 @@ public class Category {
     public Category() {
         this.name = "";
         this.description = "";
+    }
+
+    /**
+     * Constructor for Category
+     * @param name          name of the category
+     * @param description   public description of the category
+     */
+    public Category(String name, String description) {
+        this.name = name;
+        this.description = description;
     }
 }

@@ -1,5 +1,6 @@
-package com.technoboom.models.tasks;
+package com.technoboom.repository.tasks;
 
+import com.technoboom.model.tasks.Task;
 import org.springframework.data.repository.CrudRepository;
 
 /**
@@ -7,7 +8,7 @@ import org.springframework.data.repository.CrudRepository;
  * Date: 7/6/17
  * Time: 5:21 PM
  * Project: ITAcademy
- * Package: com.technoboom.models.tasks
+ * Package: com.technoboom.model.tasks
  *
  * @author dmitryi
  * @version 1.0

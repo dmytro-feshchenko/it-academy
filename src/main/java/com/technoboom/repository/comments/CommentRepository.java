@@ -1,5 +1,6 @@
-package com.technoboom.models.comments;
+package com.technoboom.repository.comments;
 
+import com.technoboom.model.comments.Comment;
 import org.springframework.data.repository.CrudRepository;
 
 /**
@@ -7,7 +8,7 @@ import org.springframework.data.repository.CrudRepository;
  * Date: 7/6/17
  * Time: 5:18 PM
  * Project: ITAcademy
- * Package: com.technoboom.models.comments
+ * Package: com.technoboom.model.comments
  *
  * @author dmitryi
  * @version 1.0
