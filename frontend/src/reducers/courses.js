@@ -15,7 +15,7 @@ export default function reducer(state = initialState, action) {
         case FETCH_SUCCESS:
             return {
                 ...state,
-                items: action.result.data,
+                items: action.result.data._embedded.courses,
                 loaded: true
             };
         case FETCH_FAIL:

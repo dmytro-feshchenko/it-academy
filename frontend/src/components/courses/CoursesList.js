@@ -9,7 +9,11 @@ import React from 'react';
 class CoursesList extends React.Component {
     render() {
         return (
-            <div>Courses list should be there</div>
+            <div>
+                {this.props.items.map((item, key) => (
+                    <div>{item.name}</div>
+                ))}
+            </div>
         )
     }
 }

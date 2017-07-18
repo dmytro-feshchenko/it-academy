@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { fetchCourses } from '../reducers/courses';
+import CoursesList from '../components/courses/CoursesList';
 
 class CoursesListContainer extends React.Component {
     componentDidMount() {
@@ -14,7 +15,9 @@ class CoursesListContainer extends React.Component {
         }
 
         return (
-            <div>Courses loaded</div>
+            <div>
+                <CoursesList items={this.props.items} />
+            </div>
         )
     }
 }
