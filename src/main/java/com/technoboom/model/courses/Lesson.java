@@ -31,6 +31,8 @@ public class Lesson {
     private Date updatedAt;
     private Date deletedAt;
 
+    private @ManyToOne Course course;
+
     private @Version @JsonIgnore Long version;
 
     /**

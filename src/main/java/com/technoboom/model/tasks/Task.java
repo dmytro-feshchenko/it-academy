@@ -1,6 +1,7 @@
 package com.technoboom.model.tasks;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.technoboom.model.courses.Lesson;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -34,6 +35,8 @@ public class Task {
     private Date createdAt;      // creation date
     private Date updatedAt;      // last updating date
     private Date deletedAt;      // deleting date
+
+    private @ManyToOne Lesson lesson;
 
     private @Version @JsonIgnore Long version;
 

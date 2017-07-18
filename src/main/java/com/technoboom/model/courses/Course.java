@@ -6,6 +6,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.Set;
 
 /**
  * Created by IntelliJ IDEA.
@@ -34,7 +35,9 @@ public class Course {
 
     private @ManyToOne User owner;
 
-//    private @ManyToMany Category category;
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "course_categories", joinColumns = @JoinColumn(name = "course_id", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "category_id", referencedColumnName = "id"))
+    private Set<Category> categories;
 
     private @Version @JsonIgnore Long version;
 
@@ -58,5 +61,21 @@ public class Course {
         this.description = description;
         this.level = level;
         this.owner = owner;
+    }
+
+    /**
+     * Constructor for Course
+     * @param name          public name of the course
+     * @param description   public description of the course
+     * @param level         complexity level (from 1 to 10)
+     * @param owner         the author of the course
+     * @param categories    the set of categories for this course
+     */
+    public Course(String name, String description, Integer level, User owner, Set<Category> categories) {
+        this.name = name;
+        this.description = description;
+        this.level = level;
+        this.owner = owner;
+        this.categories = categories;
     }
 }

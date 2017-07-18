@@ -3,6 +3,7 @@ package com.technoboom.model.courses;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.Set;
 
 /**
  * Created by IntelliJ IDEA.
@@ -25,6 +26,9 @@ public class Category {
 
     private String name;
     private String description;
+
+    @ManyToMany(mappedBy = "categories")
+    private Set<Course> courses;
 
     /**
      * Default constructor for Category

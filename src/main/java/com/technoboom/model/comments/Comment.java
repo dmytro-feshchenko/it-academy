@@ -25,4 +25,6 @@ public class Comment {
     private String title;
     private String summary;
     private String rating;
+
+    private @ManyToOne Comment parent;
 }
