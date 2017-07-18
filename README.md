@@ -1,15 +1,6 @@
 # Online service with courses and lessons
 [![Code Climate](https://codeclimate.com/github/technoboom/it-academy/badges/gpa.svg)](https://codeclimate.com/github/technoboom/it-academy)
 
-## Components:
-- REST API - Java (Spring)
-- Database - PostgreSQL
-- Client - React, Redux
-- Authorization - JWT
-- Backend Testing - JUnit 4
-- JavaScript Testing - Jest + Enzyme
-- Webpack 2
-
 ## Getting started
 #### Clone the project:
 Clone the repository
@@ -66,6 +57,14 @@ and produces `./coverage` directory with json and html reports
 - [ ] Certificates
 - [ ] Forum
 
+## Components:
+- REST API - Java (Spring)
+- Database - PostgreSQL
+- Client - React, Redux
+- Authorization - JWT
+- Backend Testing - JUnit 4
+- JavaScript Testing - Jest + Enzyme
+- Webpack 2
 
 ## Resources:
 - Spring: https://spring.io/

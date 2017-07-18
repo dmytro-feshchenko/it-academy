@@ -1,18 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import initStore from './config/store';
+import setupAxiosInterceptors from './rest/axios';
+import { browserHistory } from 'react-router';
+import { Router } from 'react-router';
+import { syncHistoryWithStore } from 'react-router-redux';
 
-import { DatePicker } from 'antd';
+import getRoutes from './router/router';
 
-// import 'antd/dist/antd.css';
+const store = initStore();
 
-class App extends React.Component {
-    render() {
-        return (
-            <div>
-                
-            </div>
-        )
-    }
-}
+const history = syncHistoryWithStore(browserHistory, store);
 
-ReactDOM.render(<App />, document.getElementById("react"));
+ReactDOM.render(
+    <Provider store={store}>
+        <div>
+            <Router history={history} routes={getRoutes()} />
+        </div>
+    </Provider>,
+    document.getElementById('react')
+);
