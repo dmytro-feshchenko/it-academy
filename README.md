@@ -1,4 +1,5 @@
 # Online service with courses and lessons
+[![Code Climate](https://codeclimate.com/github/technoboom/it-academy/badges/gpa.svg)](https://codeclimate.com/github/technoboom/it-academy)
 
 ## Components:
 - REST API - Java (Spring)
