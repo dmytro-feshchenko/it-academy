@@ -1,6 +1,8 @@
 var webpack = require('webpack');
 const path = require('path');
 
+const TARGET = process.env.npm_lifecycle_event;
+
 var config = {
     context: __dirname + '/../src/', // `__dirname` is root of project and `src` is source
     entry: {
@@ -39,11 +41,11 @@ var config = {
             },
             {
                 test: /\.css/,
-                loaders: [ 'style', 'css' ]
+                loaders: [ 'style-loader', 'css-loader' ]
             },
             {
                 test: /\.scss$/,
-                loaders: [ 'style', 'css', 'sass' ]
+                loaders: [ 'style-loader', 'css-loader', 'sass-loader' ]
             }
         ]
     },
@@ -61,7 +63,19 @@ var config = {
         ],
         extensions: [ '*', '.js', '.json']
     },
-    devtool: false
+    devServer: {
+        port: 9090,
+        proxy: {
+            '/': {
+                target: 'http://localhost:8080',
+                secure: false,
+                // node-http-proxy option - don't add /localhost:8080/ to proxied request paths
+                prependPath: false
+            }
+        },
+        publicPath: 'http://localhost:9090/'
+    },
+    devtool: TARGET === 'build' ? 'source-map' : 'eval'
 };
 
 module.exports = config;

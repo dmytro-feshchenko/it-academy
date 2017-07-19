@@ -1,6 +1,12 @@
 # Online service with courses and lessons
 [![Code Climate](https://codeclimate.com/github/technoboom/it-academy/badges/gpa.svg)](https://codeclimate.com/github/technoboom/it-academy)
 
+## Features:
+- Spring Backend (with API)
+- React + Redux Frontend
+- React Hot Reload
+- PostgreSQL database
+
 ## Getting started
 #### Clone the project:
 Clone the repository
@@ -14,6 +20,11 @@ Open your terminal and type:
 ```
 Than you can navigate to the page <a href="http://localhost:8080/api">http://localhost:8080/api</a> to see all
 available methods and links.
+
+#### Hot reload:
+To enabled hot reload you should run the backend `./mvnw spring-boot:run`
+and run webpack-dev-server with `npm run start`
+
 #### Project structure:
 ```
 project
