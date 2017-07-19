@@ -1,7 +1,14 @@
 var webpack = require('webpack');
 const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const TARGET = process.env.npm_lifecycle_event;
+
+var extractWidgetCSS = new ExtractTextPlugin({
+    filename:  (getPath) => {
+        return getPath('[name].bundle.css');
+    },
+});
 
 var config = {
     context: __dirname + '/../src/', // `__dirname` is root of project and `src` is source
@@ -45,11 +52,24 @@ var config = {
             },
             {
                 test: /\.scss$/,
-                loaders: [ 'style-loader', 'css-loader', 'sass-loader' ]
+                exclude: /node_modules/,
+                use: extractWidgetCSS.extract({
+                    fallback: 'style-loader',
+                    //resolve-url-loader may be chained before sass-loader if necessary
+                    use: [
+                        {
+                            loader: "css-loader",
+                        },
+                        {
+                            loader: "sass-loader",
+                        }
+                    ]
+                })
             }
         ]
     },
     plugins: [
+        extractWidgetCSS,
         new webpack.DefinePlugin({
             // 'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'production')
             'process.ENV.NODE_ENV': JSON.stringify('development')
