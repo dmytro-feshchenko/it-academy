@@ -1,11 +1,13 @@
 # Online service with courses and lessons
 [![Code Climate](https://codeclimate.com/github/technoboom/it-academy/badges/gpa.svg)](https://codeclimate.com/github/technoboom/it-academy)
 
-## Features:
-- Spring Backend (with API)
-- React + Redux Frontend
-- React Hot Reload
-- PostgreSQL database
+## Implemented features:
+-[x] Spring Backend (with API)
+-[x] React + Redux Frontend
+-[x] React Hot Reload (using webpack-dev-server)
+-[x] Spring Hot Reload (using spring-boot-devtools)
+-[x] PostgreSQL database
+-[x] Jest + Enzyme (Unit + Snapshot testing)
 
 ## Getting started
 #### Clone the project:

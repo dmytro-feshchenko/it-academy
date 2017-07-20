@@ -3,6 +3,7 @@ package com.technoboom.model.courses;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.Date;
 import java.util.Set;
 
 /**
@@ -26,6 +27,10 @@ public class Category {
 
     private String name;
     private String description;
+
+    private Date createdAt;      // date of course creation
+    private Date updatedAt;      // date of course last update
+    private Date deletedAt;      // date of placing course to archive
 
     @ManyToMany(mappedBy = "categories")
     private Set<Course> courses;
