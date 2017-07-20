@@ -1,5 +1,9 @@
-# Online service with courses and lessons
+# Maestro | Online service with courses and lessons
 [![Code Climate](https://codeclimate.com/github/technoboom/it-academy/badges/gpa.svg)](https://codeclimate.com/github/technoboom/it-academy)
+
+## Motivation:
+I've started to develop this project to implement fast and flexible
+solution for sharing knowledge and experience between people.
 
 ## Implemented features:
 -[x] Spring Backend (with API)
@@ -58,7 +62,7 @@ and produces `./coverage` directory with json and html reports
 - [ ] Multiple languages support
 
 
-## Features:
+## What we are going to build:
 - [ ] Authorization
 - [ ] Managing courses (CRUD) from user's account
 - [ ] Managing lesson to the courses
