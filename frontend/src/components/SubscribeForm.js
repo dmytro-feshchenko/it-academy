@@ -1,4 +1,5 @@
 import React from 'react';
+import { Input, Button } from 'semantic-ui-react'
 
 class SubscribeForm extends React.Component {
     render() {
@@ -7,10 +8,10 @@ class SubscribeForm extends React.Component {
                 <div className="subscribe-form">
                     <div className="row">
                         <div className="gr-9 gr-12@xs">
-                            <input type="text" placeholder="Enter Email Address" />
+                            <Input placeholder="Enter Email Address" fluid={true} />
                         </div>
                         <div className="gr-3 gr-12@xs">
-                            <a href="#" className="button">Subscribe</a>
+                            <Button primary fluid={true}>Subscribe</Button>
                         </div>
                     </div>
                 </div>

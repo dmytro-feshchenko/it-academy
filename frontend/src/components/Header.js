@@ -1,25 +1,35 @@
 import React from 'react';
+import { Button, Dropdown, Menu } from 'semantic-ui-react';
 
-const Header = () => (
-    <div className="page__header">
-        <div className="top-bar">
-            <div className="top-bar-left">
-                <ul className="dropdown menu" data-dropdown-menu>
-                    <li className="menu-text">Maestro</li>
-                    <li><a href="#">Courses</a></li>
-                    <li><a href="#">Resources</a></li>
-                    <li><a href="#">Forum</a></li>
-                    <li><a href="#">Three</a></li>
-                </ul>
-            </div>
-            <div className="top-bar-right">
-                <ul className="menu">
-                    <li><input type="search" placeholder="Search" /></li>
-                    <li><button type="button" className="button">Search</button></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-);
+export default class Header extends React.Component {
+    state = { activeItem: 'home' };
 
-export default Header;
+    handleItemClick = (e, { name }) => this.setState({ activeItem: name });
+
+    render() {
+        const { activeItem } = this.state;
+
+        return (
+            <Menu size='small' stackable>
+                <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick} />
+                <Menu.Item name='courses' active={activeItem === 'courses'} onClick={this.handleItemClick} />
+                <Menu.Item name='resources' active={activeItem === 'resources'} onClick={this.handleItemClick} />
+                <Menu.Item name='docs' active={activeItem === 'docs'} onClick={this.handleItemClick} />
+
+                <Menu.Menu position='right'>
+                    <Dropdown item text='Language'>
+                        <Dropdown.Menu>
+                            <Dropdown.Item>English</Dropdown.Item>
+                            <Dropdown.Item>Russian</Dropdown.Item>
+                            <Dropdown.Item>Spanish</Dropdown.Item>
+                        </Dropdown.Menu>
+                    </Dropdown>
+
+                    <Menu.Item>
+                        <Button primary>Sign Up</Button>
+                    </Menu.Item>
+                </Menu.Menu>
+            </Menu>
+        )
+    }
+}
