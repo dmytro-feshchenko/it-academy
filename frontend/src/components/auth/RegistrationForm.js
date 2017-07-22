@@ -1,0 +1,36 @@
+import React from 'react';
+import { Button, Checkbox, Form, Icon, Message } from 'semantic-ui-react';
+
+/**
+ * Form for registration
+ * User fills required personal information with login credentials
+ * If validation passes - the new account will be created
+ * Otherwise, shows validation error
+ */
+export default class RegistrationForm extends Component {
+    render() {
+        return (
+            <div>
+                <Message
+                    attached
+                    header='Welcome to our site!'
+                    content='Fill out the form below to sign-up for a new account'
+                />
+                <Form className='attached fluid segment'>
+                    <Form.Group widths='equal'>
+                        <Form.Input label='First Name' placeholder='First Name' type='text' />
+                        <Form.Input label='Last Name' placeholder='Last Name' type='text' />
+                    </Form.Group>
+                    <Form.Input label='Username' placeholder='Username' type='text' />
+                    <Form.Input label='Password' type='password' />
+                    <Form.Checkbox inline label='I agree to the terms and conditions' />
+                    <Button color='blue'>Create an account</Button>
+                </Form>
+                <Message attached='bottom' warning>
+                    <Icon name='help' />
+                    Already signed up?&nbsp;<a href='#'>Login here</a>&nbsp;instead.
+                </Message>
+            </div>
+        )
+    }
+}

@@ -6,9 +6,9 @@ import Footer from '../components/Footer';
 class AppContainer extends React.Component {
     render() {
         return (
-            <div>
+            <div className="page">
                 <Header />
-                {this.props.children}
+                <div className="page__content">{this.props.children}</div>
                 <Footer />
             </div>
         )

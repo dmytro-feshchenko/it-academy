@@ -1,13 +1,31 @@
 @import "grid";
+@import "var";
+
+html {
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: $base-font-family;
+}
 
 .page {
   .page__header {
 
   }
   .page__content {
-
+    padding: $content-padding;
   }
   .page__footer {
-
+    //position: absolute;
+    //bottom: 0;
+    //left: 0;
+    //right: 0;
+    padding: $content-padding;
+    background: $palette-secondary;
   }
 }
