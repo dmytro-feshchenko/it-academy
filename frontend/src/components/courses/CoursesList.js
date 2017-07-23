@@ -11,7 +11,7 @@ class CoursesList extends React.Component {
         return (
             <div>
                 {this.props.items.map((item, key) => (
-                    <div>{item.name}</div>
+                    <div key={key}>{item.name}</div>
                 ))}
             </div>
         )
