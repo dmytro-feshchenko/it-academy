@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer should contain copyright 1`] = `
+<div
+  className="page__footer"
+>
+  <div>
+    IT Academy Footer
+  </div>
+  <div>
+    <div
+      className="container"
+    >
+      <div
+        className="subscribe-form"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="gr-9 gr-12@xs"
+          >
+            <div
+              className="ui fluid input"
+            >
+              <input
+                placeholder="Enter Email Address"
+                type="text"
+              />
+            </div>
+          </div>
+          <div
+            className="gr-3 gr-12@xs"
+          >
+            <button
+              className="ui fluid primary button"
+              disabled={undefined}
+              onClick={[Function]}
+              tabIndex={undefined}
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

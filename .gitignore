@@ -28,6 +28,6 @@ nbdist/
 node_modules
 frontend/dist
 node/
-__snapshots__
+#__snapshots__
 
 coverage

@@ -1,0 +1,10 @@
+import React from 'react';
+import renderer from 'react-test-renderer';
+import LoginForm from './LoginForm';
+
+it("renders correctly", () => {
+    const tree = renderer.create(
+        <LoginForm />
+    );
+    expect(tree).toMatchSnapshot();
+});

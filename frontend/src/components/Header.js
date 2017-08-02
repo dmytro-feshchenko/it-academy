@@ -2,9 +2,18 @@ import React from 'react';
 import { Button, Dropdown, Menu } from 'semantic-ui-react';
 
 export default class Header extends React.Component {
-    state = { activeItem: 'home' };
+    constructor(props) {
+        super(props);
 
-    handleItemClick = (e, { name }) => this.setState({ activeItem: name });
+        this.handleItemClick = this.handleItemClick.bind(this);
+
+        this.state = { activeItem: 'home' };
+    }
+
+
+    handleItemClick(e, { name }) {
+        this.setState({ activeItem: name });
+    }
 
     render() {
         const { activeItem } = this.state;

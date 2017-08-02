@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../src/components/Header';
+import Header from './Header';
 import renderer from 'react-test-renderer';
 
 test('Header contains navigation menu', () => {
@@ -8,6 +8,4 @@ test('Header contains navigation menu', () => {
     );
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
-
-
 });

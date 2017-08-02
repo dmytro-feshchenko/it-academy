@@ -21,14 +21,11 @@
     "watch": "webpack --watch -d frontend/config/webpack.config.js",
     "test": "jest",
     "test:coverage": "jest --coverage",
+    "test:update-snapshots": "jest --updateSnapshot",
     "test:watch": "npm test -- --watch"
   },
   "jest": {
-    "collectCoverage": true,
-    "coverageFormats": [
-      "json",
-      "html"
-    ]
+    "collectCoverage": true
   },
   "dependencies": {
     "antd": "^2.12.0",

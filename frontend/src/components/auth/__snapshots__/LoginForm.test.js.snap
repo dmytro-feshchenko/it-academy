@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    className="ui attached message"
+  >
+    <div
+      className="content"
+    >
+      <div
+        className="header"
+      >
+        Welcome to our site!
+      </div>
+      <p>
+        Fill out the form below to login to your account
+      </p>
+    </div>
+  </div>
+  <form
+    className="ui form attached fluid segment"
+    onSubmit={[Function]}
+  >
+    <div
+      className="field"
+    >
+      <label
+        htmlFor={undefined}
+      >
+        Username
+      </label>
+      <div
+        className="ui input"
+      >
+        <input
+          placeholder="Username"
+          required={undefined}
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      className="field"
+    >
+      <label
+        htmlFor={undefined}
+      >
+        Password
+      </label>
+      <div
+        className="ui input"
+      >
+        <input
+          required={undefined}
+          type="password"
+        />
+      </div>
+    </div>
+    <button
+      className="ui blue button"
+      disabled={undefined}
+      onClick={[Function]}
+      tabIndex={undefined}
+    >
+      Login
+    </button>
+  </form>
+  <div
+    className="ui warning bottom attached message"
+  >
+    <i
+      aria-hidden="true"
+      className="help icon"
+    />
+    Don't registered yet? 
+    <a
+      href="#"
+    >
+      Sign-Up here
+    </a>
+     instead.
+  </div>
+</div>
+`;
