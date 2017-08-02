@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    className="ui attached message"
+  >
+    <div
+      className="content"
+    >
+      <div
+        className="header"
+      >
+        Welcome to our site!
+      </div>
+      <p>
+        Fill out the form below to sign-up for a new account
+      </p>
+    </div>
+  </div>
+  <form
+    className="ui form attached fluid segment"
+    onSubmit={[Function]}
+  >
+    <div
+      className="equal width fields"
+    >
+      <div
+        className="field"
+      >
+        <label
+          htmlFor={undefined}
+        >
+          First Name
+        </label>
+        <div
+          className="ui input"
+        >
+          <input
+            placeholder="First Name"
+            required={undefined}
+            type="text"
+          />
+        </div>
+      </div>
+      <div
+        className="field"
+      >
+        <label
+          htmlFor={undefined}
+        >
+          Last Name
+        </label>
+        <div
+          className="ui input"
+        >
+          <input
+            placeholder="Last Name"
+            required={undefined}
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="field"
+    >
+      <label
+        htmlFor={undefined}
+      >
+        Username
+      </label>
+      <div
+        className="ui input"
+      >
+        <input
+          placeholder="Username"
+          required={undefined}
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      className="field"
+    >
+      <label
+        htmlFor={undefined}
+      >
+        Password
+      </label>
+      <div
+        className="ui input"
+      >
+        <input
+          required={undefined}
+          type="password"
+        />
+      </div>
+    </div>
+    <div
+      className="inline field"
+    >
+      <div
+        className="ui checkbox"
+        onChange={[Function]}
+        onClick={[Function]}
+        onMouseDown={[Function]}
+        required={undefined}
+      >
+        <input
+          checked={false}
+          className="hidden"
+          name={undefined}
+          readOnly={true}
+          tabIndex={0}
+          type="checkbox"
+          value={undefined}
+        />
+        <label>
+          I agree to the terms and conditions
+        </label>
+      </div>
+    </div>
+    <button
+      className="ui blue button"
+      disabled={undefined}
+      onClick={[Function]}
+      tabIndex={undefined}
+    >
+      Create an account
+    </button>
+  </form>
+  <div
+    className="ui warning bottom attached message"
+  >
+    <i
+      aria-hidden="true"
+      className="help icon"
+    />
+    Already signed up? 
+    <a
+      href="#"
+    >
+      Login here
+    </a>
+     instead.
+  </div>
+</div>
+`;

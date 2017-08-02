@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with items 1`] = `
+<div
+  className="dropdown"
+>
+  <div
+    className="dropdown__active"
+    onClick={[Function]}
+  >
+    Select
+  </div>
+  <div
+    className="dropdown__options"
+  >
+    <div
+      className="dropdown__item"
+      onClick={[Function]}
+    >
+      Option 1
+    </div>
+    <div
+      className="dropdown__item"
+      onClick={[Function]}
+    >
+      Option 2
+    </div>
+  </div>
+</div>
+`;
