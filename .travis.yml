@@ -1,12 +1,13 @@
-language: java
-jdk:
-  - oraclejdk8
-services:
-  - postgresql
+---
+language: node_js
+node_js:
+  - 6
+  - 8
 cache:
   directories:
-    - $HOME/.m2
+  - node_modules
 install: true
 before_script:
-  - psql -c 'create database itacademy;' -U postgres
-  - travis_wait 45 ./mvnw install -q -U -DskipTests=true -Pfast -Dmaven.test.redirectTestOutputToFile=true
+ - npm install
+script:
+ - npm run test
