@@ -1,4 +1,5 @@
 # Maestro | Online service with courses and lessons
+[![Build Status](https://travis-ci.org/technoboom/it-academy.svg?branch=master)](https://travis-ci.org/technoboom/it-academy)
 [![Code Climate](https://codeclimate.com/github/technoboom/it-academy/badges/gpa.svg)](https://codeclimate.com/github/technoboom/it-academy)
 
 ## Motivation:
@@ -6,12 +7,12 @@ I've started to develop this project to implement fast and flexible
 solution for sharing knowledge and experience between people.
 
 ## Implemented features:
--[x] Spring Backend (with API)
--[x] React + Redux Frontend
--[x] React Hot Reload (using webpack-dev-server)
--[x] Spring Hot Reload (using spring-boot-devtools)
--[x] PostgreSQL database
--[x] Jest + Enzyme (Unit + Snapshot testing)
+- [x] Spring Backend (with API)
+- [x] React + Redux Frontend
+- [x] React Hot Reload (using webpack-dev-server)
+- [x] Spring Hot Reload (using spring-boot-devtools)
+- [x] PostgreSQL database
+- [x] Jest + Enzyme (Unit + Snapshot testing)
 
 ## Getting started
 #### Clone the project:
