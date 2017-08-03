@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="star-rating"
+>
+  <div
+    className="ui rating"
+    onMouseLeave={[Function]}
+    role="radiogroup"
+  >
+    <div
+      aria-checked={false}
+      aria-posinset={1}
+      aria-setsize="5"
+      className="icon"
+      onClick={[Function]}
+      onKeyUp={[Function]}
+      onMouseEnter={[Function]}
+      role="radio"
+      tabIndex={0}
+    />
+    <div
+      aria-checked={false}
+      aria-posinset={2}
+      aria-setsize="5"
+      className="icon"
+      onClick={[Function]}
+      onKeyUp={[Function]}
+      onMouseEnter={[Function]}
+      role="radio"
+      tabIndex={0}
+    />
+    <div
+      aria-checked={false}
+      aria-posinset={3}
+      aria-setsize="5"
+      className="icon"
+      onClick={[Function]}
+      onKeyUp={[Function]}
+      onMouseEnter={[Function]}
+      role="radio"
+      tabIndex={0}
+    />
+    <div
+      aria-checked={false}
+      aria-posinset={4}
+      aria-setsize="5"
+      className="icon"
+      onClick={[Function]}
+      onKeyUp={[Function]}
+      onMouseEnter={[Function]}
+      role="radio"
+      tabIndex={0}
+    />
+    <div
+      aria-checked={false}
+      aria-posinset={5}
+      aria-setsize="5"
+      className="icon"
+      onClick={[Function]}
+      onKeyUp={[Function]}
+      onMouseEnter={[Function]}
+      role="radio"
+      tabIndex={0}
+    />
+  </div>
+</div>
+`;

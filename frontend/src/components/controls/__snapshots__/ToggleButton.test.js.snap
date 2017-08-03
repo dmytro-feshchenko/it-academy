@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with checked prop 1`] = `
+<div
+  className="button button_switch button_checked"
+  onClick={[Function]}
+>
+  Deselect
+</div>
+`;
+
+exports[`renders correctly without checked prop 1`] = `
+<div
+  className="button button_switch"
+  onClick={[Function]}
+>
+  Select
+</div>
+`;
